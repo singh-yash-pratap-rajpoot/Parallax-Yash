@@ -1,0 +1,120 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato",sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+.img1{
+    background-image: url(image1.png);
+    min-height: 100%;
+    
+}
+.img2{
+    background-image: url(image2.png);
+    min-height: 500px;
+    
+}
+.img3{
+    background-image: url(image3.png);
+    min-height: 500px;
+    
+}
+.img1 , .img2 , .img3{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*one line code for parallax effect*/
+}
+.text1{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 30px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+.textbg{
+    background: #313534;
+    color: #fff;
+    padding: 20px;
+}
+.img1p{
+    padding: 50px 80px;
+    justify-content: center;
+    background: #f4f4f4;
+    color: #666;
+}
+.img2p{
+    padding: 50px 80px;
+    text-align: center;
+    background: #282e34;
+    color: #ddd;}
+/* }custom scrollbar  */
+::-webkit-scrollbar{
+    width: 15px;
+
+}
+::-webkit-scrollbar-track{
+    background: black;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(rgb(12, 156, 142),green);
+  border-radius: 10px;
+}
+
+@media (min-width: 1200px){
+    .textbg{
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1200px) and (min-width:992px){
+    .textbg{
+        text-align: center;
+        justify-content: center;
+    }
+}
+@media (max-width: 992px) and (min-width:768px){
+    .textbg{
+        text-align: center;
+        justify-content: center;
+    }
+}
+@media (max-width: 768px) and (min-width:600px){
+    .textbg{
+        text-align: center;
+        justify-content: center;
+    }
+}
+@media (max-width: 600px) and (min-width:400px){
+    .textbg{
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        margin:0px 10px ;
+        
+    }
+    .text1{
+        font-size: 20px;
+    }
+}
+@media (max-width: 400px) and (min-width:0px){
+    .textbg{
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        
+    }
+    .text1{
+        font-size: 15px;
+    }
+}
+
